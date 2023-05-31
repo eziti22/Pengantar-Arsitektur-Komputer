@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulir BPOM</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .margin{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table td, table th, table tr {
+      padding: 5px;
+      border: 1px solid black;
+    }
+
+    tr.noBorder td{
+        border: 0;
+    }
+
+    .tdSize{
+        width: 20px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .input-box {
+      width: 20px;
+      text-align: center;
+    }
+
+    .check-box {
+      width: 20px;
+      padding: 8px 12px;
+    }
+
+    .input-text {
+      width: 20px;
+      text-align: center;
+    }
+
+    .date-input {
+      width: 20px;
+      text-align: center;
+    }
+
+    .kategori-input {
+      width: 20px;
+      padding: 8px 12px;
+    }
+
+    .form-input {
+      padding: 8px 12px;
+      text-align: left;
+    }
+
+    .bentuk-input {
+      padding: 8px 12px;
+      justify-content: center;
+    }
+
+    .align-label{
+        text-align: right;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .logo-cell {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .logo-image {
+      max-height: 100px;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+<body>
+  <table class="margin">
+    <tr>
+      <td colspan="2" class="logo-cell">
+        <img src="logo.jpg" alt="Logo BPOM" height="100" class="logo-image">
+      </td>
+      <td colspan="7" rowspan="2">
+        <p class="center bold">BADAN PENGAWAS OBAT DAN MAKANAN REPUBLIK INDONESIA</p>
+        <p class="center bold">FORMULIR REGISTRASI OBAT DAN PRODUK BIOLOGI</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="bold center">DOKUMEN RAHASIA</td>
+    </tr>    
+      <td colspan="10" style="background-color: rgb(211, 211, 211);">
+        <table style="border:hidden;" > 
+        <tr>     
+          <td colspan="10" class="bold" style="border-bottom:hidden;">Diisi Oleh Badan POM</td>
+        </tr>
+        <tr class="noBorder">
+          <td class="no" style="border-bottom:hidden;">
+            <label for="no-pendaftaran">No Pendaftaran</label>
+          </td>
+          <td colspan="8" style="border-bottom:hidden;">
+            <input type="text" id="no-pendaftaran" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+          </td>
+        </tr>
+        <tr class="noBorder">
+          <td colspan="1" rowspan="1">
+            <label for="tanggal-penerimaan">Tanggal Penerimaan</label>
+          </td>
+          <td colspan="5" rowspan="1">
+            <input type="text" id="tanggal-penerimaan" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+            <input type="text" maxlength="1" class="date-input">
+          </td>
+          <td colspan="1" rowspan="1">
+            <label for="kode-evaluasi">Kode Evaluasi</label>
+            <input type="text" id="kode-evaluasi" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+          </td>
+          <td colspan="1" rowspan="1">
+            <label for="sub-kode-evaluasi">Sub Kode Evaluasi</label>
+            <input type="text" id="sub-kode-evaluasi" maxlength="1" class="input-box">
+            <input type="text" maxlength="1" class="input-box">
+          </td>
+        </tr>
+        <tr class="noBorder" style="border-top:hidden;">
+          <td></td>
+          <td colspan="5">
+            <span class="italic">dd/mm/yyyy</span>
+          </td>
+        </tr>
+        </table>
+      </td>
+  </table>
+  <br>
+    <table class="margin">
+        <tr>
+            <td>
+                <p class="bold">A. URAIAN OBAT</p>
+            </td>
+        </tr>
+    </table>
+    <table class="margin">
+        <tr class="noBorder">
+            <td>
+                <table style="border: hidden;">
+                    <tr>
+                        <td style="border-bottom: hidden;">
+                            <label for="kategori-registrasi">Kategori Registrasi</label>
+                        </td>
+                        <td style="width: 70px;border-bottom: hidden;">
+                            <input type="text" id="kategori-registrasi" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td colspan="10" style="border-bottom: hidden">
+                                <input type="text" id="form" class="form-input" style="width: 95%;">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden;">
+                            <label for="jenis-obat">Jenis Obat</label>
+                        </td>
+                        <td colspan="2" class="align-label" style="border-bottom: hidden">    
+                            <span class="input-text">Baru</span>
+                        </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="jenis-obat-baru" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden">
+                            <span class="input-text">Copy</span>
+                        </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="jenis-obat-copy" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden">
+                            <span class="input-text">Produk biologi</span>
+                        </td>
+                        <td colspan="5" style="border-bottom: hidden;">
+                            <input type="text" id="jenis-obat-biologi" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden;">
+                            <label for="jenis-produk">Jenis Produk</label>
+                        </td>
+                        <td colspan="2" class="align-label" style="border-bottom: hidden">
+                            <span class="input-text">Produk tunggal</span>
+                        </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="jenis-produk-tunggal" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden" colspan="3">
+                                <span class="input-text">Produk kombinasi</span>
+                            </td>
+                        <td colspan="5" style="border-bottom: hidden;">
+                            <input type="text" id="jenis-produk-kombinasi" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="border-bottom: hidden;">
+                            <label for="golongan-obat">Golongan Obat</label>
+                        </td>
+                        <td colspan="2" class="align-label" style="border-bottom: hidden">
+                                <span class="input-text">Keras</span>
+                            </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="golongan-obat-keras" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden">
+                                <span class="input-text">Bebas</span>
+                            </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="golongan-obat-bebas" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden">
+                                <span class="input-text">Bebas terbatas</span>
+                            </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="golongan-obat-bebas-terbatas" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden">
+                                <span class="input-text">Narkotika</span>
+                            </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="golongan-obat-narkotika" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                        <td class="align-label" style="border-bottom: hidden">
+                                <span class="input-text">Psikotropika</span>
+                            </td>
+                        <td style="border-bottom: hidden;">
+                            <input type="text" id="golongan-obat-psikotropika" maxlength="1" class="check-box" style="width: 15px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="margin">
+      <tr>
+        <td>
+          <table style="border-style:hidden">
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="border-bottom: hidden; width: 230px;">
+                <label for="nama-obat">Nama Obat</label>
+              </td>
+              <td colspan="6" style="border-bottom: hidden">
+                <input type="text" id="form" class="form-input" style="width: 97%;">
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td colspan="3" style="border-bottom: hidden;"></td>
+              <td style="text-align: center;border-bottom: hidden;">
+                <span class="input-text">Kekuatan</span>
+              </td>
+              <td style="text-align: center;border-bottom: hidden;">
+                <span class="input-text">Satuan</span>
+              </td>
+              <td style="border-bottom: hidden; width: 26%;"></td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="border-bottom: hidden;">
+                <label for="bentuk-sediaan">Bentuk Sediaan</label></td>
+              <td colspan="2">
+                <input type="text" id="form" class="form-input" style="width: 322px;">
+              </td>
+              <td style="text-align: center;width: 150px;margin: 0;">
+                <input type="text" id="form" class="bentuk-input" style="width: 70px;">
+              </td>
+              <td style="text-align: center;width: 150px;">
+                <select id="form" class="bentuk-input" style="width: 70px;"></select>
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="border-bottom: hidden;">
+                <label for="kelas-terapi">Kelas Terapi</label></td>
+              <td colspan="2">
+                <select id="form" class="form-input" style="width: 350px;"></select>
+              </td>
+              <td style="border-bottom: hidden;text-align: center;">
+                <label for="kelas-terapi">Kode ATC</label>
+              </td>
+              <td style="text-align: center;width: 150px;">
+                  <select id="form" class="bentuk-input" style="width: 70px;"></select>
+                </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="border-bottom: hidden;">
+                <label for="kemasan">Kemasan <br> (Jenis dan Deskripsi) </label></td>
+              <td style="width: 100px;">
+                <select id="form" class="form-input" style="width: 70px;"></select>
+              </td>
+              <td colspan="5">
+                <input type="text" id="form" class="form-input" style="width: 96.6%;">
+              </td>
+            </tr>
+            <tr class="noBorder">
+              <td style="border-bottom: hidden;">
+                <label for="jenis-produk">Jenis Produk</label></td>
+              <td colspan="6">
+                <input type="text" id="form" class="form-input" style="width: 97%;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td style="background-color: rgb(211, 211, 211);">
+          <p style="font-size:12px ;">*: Pilih salah satu</p>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td>
+          <table style="border: hidden;">
+            <tr style="border-bottom: hidden;"">
+              <td colspan="6">
+                <p>Bentuk Sediaan, Kekuatan, Kemasan lain</p>
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="text-align: center;">
+                <label for="bentuk-sediaan">Bentuk Sediaan</label>
+              </td>
+              <td style="text-align: center;">
+                <label for="bentuk-sediaan">Kekuatan</label>
+              </td>
+              <td style="text-align: center;">
+                <label for="bentuk-sediaan">Jenis Kemasan</label>
+              </td>
+              <td style="text-align: center;">
+                <label for="bentuk-sediaan">Besar Kemasan</label>
+              </td>
+              <td style="text-align: center;">
+                <label for="bentuk-sediaan">NIE</label>
+              </td>
+              <td style="text-align: center;">
+                <label for="bentuk-sediaan">Masa laku NIE</label>
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+            </tr>
+            <tr class="noBorder" style="border-bottom: hidden;">
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+              <td style="text-align: center;">
+                <input type="text" id="form" class="bentuk-input">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td style="background-color: rgb(211, 211, 211);">
+          <p style="font-size:12px ;">*: NIE : Nomor Izin Edar</p>
+        </td>
+      </tr>
+    </table>
+</body>
+<footer>Copyright by: Mochammad Fauzi</footer>
+</html>
